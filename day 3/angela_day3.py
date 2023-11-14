@@ -1,11 +1,3 @@
-"""
-x = int(input("Enter Number: "))
-
-if x % 2 == 0:
-    print("This is even number")
-else:
-    print("this is odd number")
-"""
 height = int(input("enter height in cm: "))
 age = int(input("enter age: "))
 
