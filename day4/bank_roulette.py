@@ -1,6 +1,8 @@
 import random
 name_string = input("Give me everybody's name, separated by a comma ")
 names = name_string.split(", ")
+# easy method is to use random.choice(names)
+
 # print(names[0].title())
 
 length = len(names)
