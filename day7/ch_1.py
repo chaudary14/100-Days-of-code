@@ -2,6 +2,7 @@ import random
 import words_hangman
 import hangman_art
 import sys, subprocess
+import os
 # word_list = ["advark", "baboon", "camel"]
 # improving functionality by adding lots of words
 
@@ -23,7 +24,9 @@ print(display)
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-    subprocess.run("cls", shell=True)
+    # subprocess.run("cls", shell=True)
+    os.system("cls")
+    # os and subshell same function
     # subprocess.run(cls shell true is used to clear the screen after that step.)
     if guess in display:
         print(f"You have already guessed {guess}")
