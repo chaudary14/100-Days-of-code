@@ -15,21 +15,16 @@ student_scores = {
 
 student_grades = {}
 #TODO-2: Write your code below to add the grades to student_grades.👇
-for x in student_scores:
-    score = student_scores[x]
-    if 90 < score:
-        student_grades[x] = "OUTSTANDING"
-        # print(x, "grade is EXcelleent")
-    elif 80 < score:
-        student_grades[x] = "EXceeding acceptation"
-
-        # print(x, "grade is exceeds expectation")
-    elif 70 < score:
-        student_grades[x] = "acceptable"
-        # print(x, "grade is acceptable.")
+for key in student_scores:
+    score = student_scores[key]
+    if 91 <= score <= 100:
+        student_grades[key] = "Outstanding"
+    elif score > 80:
+        student_grades[key] = "Exceeds expectation"
+    elif score > 70:
+        student_grades[key] = "Accesptable"
     else:
-        student_grades[x] = "Fail"
-        # print(x, "grade is Fail")
+        student_grades[key] = "Fail"
 
 
 # 🚨 Don't change the code below 👇
